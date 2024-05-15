@@ -131,7 +131,7 @@ header img {
     border-radius: 14px;
 }
 
-/* ==================== SEPARADOR DE SESSÕES CUSTOMIZAÇÕES ==================== */
+/* ==================== SEPARADOR DE SESSÕES CUSTOMIZADA ==================== */
 
 h2.separator {
     padding: 0 80px;
@@ -139,13 +139,13 @@ h2.separator {
     margin-top: 40px;
 }
 
-/* ==================== SESSÕES CUSTOMIZADAS ==================== */
+/* ==================== SESSÃO - FORMAÇÃO ==================== */
 
 .formacao-lista {
     padding: 0 80px;
     margin: 50px 0 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 30px;
 }
 
@@ -315,6 +315,7 @@ h2.separator {
     padding: 0 80px;
     margin: 40px 0 80px;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -322,9 +323,9 @@ h2.separator {
     background: #fff;
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 30%;
     gap: 14px;
-    padding: 14px;
+    padding: 12px;
     border-radius: 18px;
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
