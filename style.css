@@ -332,7 +332,9 @@ h2.separator {
 }
 
 .habilidades-lista .item img {
-    width: 64px;
+    /* LIMITAR A IMAGEM, POIS ALGUMAS POSSUEM DIMENSÕES DIFERENTES */
+    width: 45px;
+    height: 45px;
 }
 
 .habilidades-lista .item .info p {
