@@ -95,7 +95,7 @@ header .esquerda {
   padding: 5px 10px;
 
   & h1 {
-    font-size: 70px;
+    font-size: 3rem;
 
     & span {
       color: var(--main-cor-primaria);
@@ -106,6 +106,7 @@ header .esquerda {
     margin: 48px 0;
     color: #777;
     text-align: var(--main-texto-justificado);
+    font-size: 1rem;
   }
 
   & a {
