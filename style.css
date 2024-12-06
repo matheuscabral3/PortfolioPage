@@ -132,48 +132,13 @@ header .esquerda {
   }
 }
 
-/*
-
-header .esquerda h1 span {
-  color: var(--main-cor-primaria);
-} 
-
-header .esquerda p {
-    margin: 48px 0;
-    color: #777;
-    text-align: var(--main-texto-justificado);
-}
-
-header .esquerda a {
-  display: flex;
-  align-items: center;
-  background: #000;
-  width: 200px;
-  padding: 8px;
-  border-radius: 60px;
-  font-size: 14px;
-}
-
-header .esquerda a i {
-  background-color: #fff;
-  font-size: 24px;
-  border-radius: 50%;
-  padding: 8px;
-}
-
-header .esquerda a span {
-  color: #fff;
-  margin-left: 10px;
-}
-
-*/
-
 /* ==================== SEPARADOR DE SESSÕES CUSTOMIZADA ==================== */
 
 .separator {
   font-size: 2rem;
   width: 100%;
   text-align: var(--main-texto-centralizado);
+  color: var(--main-cor-primaria);
   margin: 20px 0;
   padding: 20px 10px;
 }
@@ -190,6 +155,7 @@ header .esquerda a span {
 
 .formacao-lista .item,
 .projetos .projetos-lista .item {
+  width: 30%;
   padding: 20px;
   background-color: #fff;
   border-radius: 18px;
@@ -350,39 +316,66 @@ header .esquerda a span {
   background: var(--main-cor-primaria);
 }
 
-/* ==================== VENDEDORES ==================== */
+/* ==================== CONHECIMENTOS ==================== */
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.habilidades-descricao {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & h2 {
+    color: var(--main-cor-primaria);
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  & p {
+    text-align: justify;
+    padding: 20px;
+  }
+}
 
 .habilidades-lista {
+  width: 40%;
   padding: 0 80px;
   margin: 40px 0 80px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .habilidades-lista .item {
   background: #fff;
   display: flex;
   align-items: center;
-  width: 30%;
-  gap: 14px;
-  padding: 12px;
+  width: 12%;
+  padding: 5px;
   border-radius: 18px;
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   justify-content: center;
+}
 
+.habilidades-lista .item .info {
   & img {
-    /* LIMITAR A IMAGEM, POIS ALGUMAS POSSUEM DIMENSÕES DIFERENTES */
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+    filter: grayscale(100%);
   }
 }
 
-.habilidades-lista .item .info p {
-  font-size: 14px;
-  margin-top: 8px;
+.habilidades-lista .item .info img:hover {
+  filter: grayscale(0%);
 }
 
 /* ==================== CONTEÚDO FOOTER ==================== */
@@ -390,7 +383,7 @@ header .esquerda a span {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 100px 80px;
+  padding: 50px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -704,8 +697,7 @@ footer .direita p {
     width: 100%;
   }
 
-  .projetos .projetos-lista .item,
-  .habilidades-lista .item {
+  .projetos .projetos-lista .item {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -737,9 +729,38 @@ footer .direita p {
     font-size: 8px;
   }
 
+  .habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .habilidades-descricao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & h2 {
+      text-align: center;
+    }
+  }
+
   .habilidades-lista {
     display: flex;
     justify-content: center;
+    width: 100%;
+
+    & img {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .habilidades-lista .item {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
   }
 
   footer h3 {
