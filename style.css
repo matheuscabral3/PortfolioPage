@@ -18,6 +18,23 @@ body {
   background-color: #f1f1f1;
 }
 
+/* ==================== ELEMENTOS SCROLL ==================== */
+
+/* largura e a cor da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-cor-primaria);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c5588;
+}
+
 /* ==================== ELEMENTOS HEADER ==================== */
 
 a {
@@ -41,6 +58,11 @@ nav a.logo {
   font-size: 30px;
   color: var(--main-cor-primaria);
   font-weight: 600;
+}
+
+nav a.logo:hover {
+  font-weight: bold;
+  border-bottom: 2px solid var(--main-cor-primaria);
 }
 
 nav .links a {
@@ -396,6 +418,11 @@ footer h3 {
 
 footer h3 span {
   color: var(--main-cor-primaria);
+}
+
+footer h3 span:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
 }
 
 footer .direita {
