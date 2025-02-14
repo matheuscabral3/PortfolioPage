@@ -1,0 +1,226 @@
+/* ==================== ANIMAÇÕES CSS ==================== */
+:root {
+  --main-cor-primaria: #0f2182;
+}
+
+/* ==================== ANIMAÇÃO TEXTO DE INTRODUÇÃO ==================== */
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-animation {
+  color: var(--main-cor-primaria);
+  /* background: -webkit-linear-gradient(95deg, var(--main-cor-primaria), #333); */
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  font-size: 3rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: type 1.5s steps(90) 1.5s 1 normal both;
+  position: relative;
+  width: 100%;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* ==================== ANIMAÇÃO DO BOTÃO DE CONTATO ==================== */
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  content: "";
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+
+  & span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+
+    & i {
+      font-size: 15px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.btn-3 {
+  padding: 5px;
+
+  & span {
+    color: rgb(255, 255, 255);
+    background-color: var(--main-cor-primaria);
+    /* background-color: rgb(54, 56, 55); */
+  }
+}
+
+.btn-3::before,
+.btn-3::after {
+  background: transparent;
+  z-index: 2;
+}
+
+.btn.hover-border-4::before,
+.btn.hover-border-4::after {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+}
+
+.btn.hover-border-4::before {
+  bottom: 0;
+  left: -1px;
+  border-top: 1px solid rgb(28, 31, 30);
+  border-left: 1px solid rgb(28, 31, 30);
+}
+
+.btn.hover-border-4::after {
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(28, 31, 30);
+  border-right: 1px solid rgb(28, 31, 30);
+}
+
+.btn.hover-border-4:hover::before,
+.btn.hover-border-4:hover::after {
+  width: 100%;
+  height: 99%;
+  opacity: 1;
+  transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+}
+
+/* ==================== ANIMAÇÃO DA IMAGEM DO BANNER ==================== */
+
+/* ========== fadeInRight ========== */
+header img {
+  width: 550px;
+  height: 550px;
+  border-radius: 14px;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.four {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+/* ========== fadeInRight ========== */
+
+/* ========== fadeInLeft ========== */
+
+.three {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/* ========== fadeInLeft ========== */

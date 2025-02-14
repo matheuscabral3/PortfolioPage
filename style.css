@@ -16,6 +16,7 @@
 
 body {
   background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 
 /* ==================== ELEMENTOS SCROLL ==================== */
@@ -103,26 +104,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  & img {
-    width: 550px;
-    height: 550px;
-    border-radius: 14px;
-  }
 }
 
 header .esquerda {
   width: 700px;
   text-align: -webkit-center;
   padding: 5px 10px;
-
-  & h1 {
-    font-size: 3rem;
-
-    & span {
-      color: var(--main-cor-primaria);
-    }
-  }
 
   & p {
     margin: 48px 0;
@@ -489,7 +476,7 @@ footer .direita p {
     justify-content: center;
   }
 
-  header .esquerda h1 {
+  header .esquerda h5 {
     font-size: 60px;
   }
 
@@ -514,7 +501,7 @@ footer .direita p {
 
 /* ==================== RESPONSIVIDADE - 1200 MAX ==================== */
 @media screen and (max-width: 1200px) {
-  header .esquerda h1 {
+  header .esquerda h5 {
     font-size: 48px;
   }
 
@@ -659,7 +646,7 @@ footer .direita p {
     padding: 6px 10px;
   }
 
-  header .esquerda h1 {
+  header .esquerda h5 {
     font-size: 36px;
   }
 
@@ -703,7 +690,7 @@ footer .direita p {
     text-align: -webkit-center;
   }
 
-  header .esquerda h1 {
+  header .esquerda h5 {
     font-size: 25px;
     margin: 10px 10px 5px 0;
   }
