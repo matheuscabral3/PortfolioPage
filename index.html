@@ -7,7 +7,7 @@
     <title>Portfolio - Matheus Mendes</title>
 
     <!-- ICONE EXIBIDO NA GUIA URL -->
-    <link rel="icon" href="./assets/code.png" />
+    <link rel="icon" href="./assets/imagens/projetos/code.png" />
 
     <!-- ICON REFERENCIA - CDN -->
     <link
@@ -21,8 +21,8 @@
     <!-- LINK REFERENCIA JQUERY - CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
   </head>
 
   <body>
@@ -39,7 +39,7 @@
         <a href="#ancor_inicio">Sobre</a>
         <a href="#ancor_formacao">Formação</a>
         <a href="#ancor_projetos">Projetos</a>
-        <!-- <a href="#">Contato</a> -->
+        <a href="./componentes/views/frmCertificados.html">Certificados</a>
       </div>
       <!-- <div class="login">
             <button class="btnEntrar">Entrar</button>
@@ -83,13 +83,16 @@
         </a> -->
 
         <button class="btn btn-3 hover-border-4" id="btnEntrarContato">
-          <span> <i class="ri-whatsapp-line"></i>Entrar em Contato</span>
+          <span><i class="ri-whatsapp-line"></i>Entrar em Contato</span>
+        </button>
+        <button class="btn btn-3 hover-border-4" id="btnDownload">
+          <span><i class="ri-file-pdf-2-line"></i>Baixar Currículo</span>
         </button>
       </div>
 
       <img
         class="animate fadeInRight four"
-        src="assets/imagemPerfil.jpeg"
+        src="assets/imagens/projetos/imagemPerfil.jpeg"
         alt=""
       />
     </header>
@@ -119,15 +122,17 @@
     <h2 class="separator" id="ancor_projetos">Projetos Desenvolvidos</h2>
 
     <div class="projetos">
-      <!-- <div class="categoria">
-        <a href="#">Todos</a>
-        <a href="#">Front-End</a>
-        <a href="#">Back-End</a>
-      </div> -->
+      <div class="categoria">
+        <!-- <a href="#">Projetos</a> -->
+        <a href="./componentes/views/frmCertificados.html">Certificados</a>
+      </div>
 
       <div class="projetos-lista">
         <div class="item">
-          <img src="./assets/cadastro-usuario.png" alt="Cadastro de usuários" />
+          <img
+            src="./assets/imagens/projetos/cadastro-usuario.png"
+            alt="Cadastro de usuários"
+          />
           <div class="info">
             <div>
               <h5>Cadastro de Usuário - React</h5>
@@ -147,7 +152,10 @@
         </div>
 
         <div class="item">
-          <img src="./assets/pagina-login.png" alt="Página de Login" />
+          <img
+            src="./assets/imagens/projetos/pagina-login.png"
+            alt="Página de Login"
+          />
           <div class="info">
             <div>
               <h5>Página de Login - React</h5>
@@ -167,7 +175,10 @@
         </div>
 
         <div class="item">
-          <img src="./assets/CodeConnect.png" alt="CodeConnect" />
+          <img
+            src="./assets/imagens/projetos/CodeConnect.png"
+            alt="CodeConnect"
+          />
           <div class="info">
             <div>
               <h5>CodeConnect</h5>
@@ -187,7 +198,7 @@
         </div>
 
         <div class="item">
-          <img src="./assets/VidFlow.png" alt="VidFlow" />
+          <img src="./assets/imagens/projetos/VidFlow.png" alt="VidFlow" />
           <div class="info">
             <div>
               <h5>VidFlow</h5>
@@ -251,20 +262,28 @@
       <div class="habilidades-lista">
         <div class="item">
           <div class="info">
-            <img src="./assets/html5.png" alt="HTML5" title="HTML5" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="info">
-            <img src="./assets/css3.png" alt="CSS3" title="CSS3" />
+            <img
+              src="./assets/imagens/projetos/html5.png"
+              alt="HTML5"
+              title="HTML5"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
             <img
-              src="./assets/bootstrap.png"
+              src="./assets/imagens/projetos/css3.png"
+              alt="CSS3"
+              title="CSS3"
+            />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <img
+              src="./assets/imagens/projetos/bootstrap.png"
               alt="Bootstrap"
               title="Bootstrap"
             />
@@ -273,19 +292,31 @@
 
         <div class="item">
           <div class="info">
-            <img src="./assets/angular.png" alt="Angular" title="Angular" />
+            <img
+              src="./assets/imagens/projetos/angular.png"
+              alt="Angular"
+              title="Angular"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
-            <img src="./assets/react.png" alt="React" title="React" />
+            <img
+              src="./assets/imagens/projetos/react.png"
+              alt="React"
+              title="React"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
-            <img src="./assets/javascript.png" alt="JS" title="Javascript" />
+            <img
+              src="./assets/imagens/projetos/javascript.png"
+              alt="JS"
+              title="Javascript"
+            />
           </div>
         </div>
 
@@ -293,7 +324,7 @@
           <div class="info">
             <img
               style="border-radius: 50%"
-              src="./assets/dotnet.png"
+              src="./assets/imagens/projetos/dotnet.png"
               alt=".NET"
               title=".NET"
             />
@@ -303,7 +334,7 @@
         <div class="item">
           <div class="info">
             <img
-              src="./assets/net_core.png"
+              src="./assets/imagens/projetos/net_core.png"
               alt=".NET CORE"
               title=".NET CORE"
             />
@@ -312,38 +343,58 @@
 
         <div class="item">
           <div class="info">
-            <img src="./assets/csharp.png" alt="CSharp" title="CSharp" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="info">
-            <img src="./assets/vbnet.png" alt="VB.NET" title="VB.NET" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="info">
-            <img src="./assets/nodejs.png" alt="NodeJS" title="NodeJS" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="info">
-            <img src="./assets/jquery.png" alt="jQuery" title="jQuery" />
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="info">
-            <img src="./assets/php.png" alt="PHP" title="PHP" />
+            <img
+              src="./assets/imagens/projetos/csharp.png"
+              alt="CSharp"
+              title="CSharp"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
             <img
-              src="./assets/sqlserver.png"
+              src="./assets/imagens/projetos/vbnet.png"
+              alt="VB.NET"
+              title="VB.NET"
+            />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <img
+              src="./assets/imagens/projetos/nodejs.png"
+              alt="NodeJS"
+              title="NodeJS"
+            />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <img
+              src="./assets/imagens/projetos/jquery.png"
+              alt="jQuery"
+              title="jQuery"
+            />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <img
+              src="./assets/imagens/projetos/php.png"
+              alt="PHP"
+              title="PHP"
+            />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="info">
+            <img
+              src="./assets/imagens/projetos/sqlserver.png"
               alt="SQL Server"
               title="SQL Server"
             />
@@ -352,19 +403,31 @@
 
         <div class="item">
           <div class="info">
-            <img src="./assets/trello.png" alt="Trello" title="Trello" />
+            <img
+              src="./assets/imagens/projetos/trello.png"
+              alt="Trello"
+              title="Trello"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
-            <img src="./assets/git.png" alt="Git" title="Git" />
+            <img
+              src="./assets/imagens/projetos/git.png"
+              alt="Git"
+              title="Git"
+            />
           </div>
         </div>
 
         <div class="item">
           <div class="info">
-            <img src="./assets/github.png" alt="Github" title="Github" />
+            <img
+              src="./assets/imagens/projetos/github.png"
+              alt="Github"
+              title="Github"
+            />
           </div>
         </div>
       </div>
@@ -398,6 +461,6 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./assets/javascript/index.js"></script>
   </body>
 </html>
